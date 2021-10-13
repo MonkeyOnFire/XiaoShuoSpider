@@ -1,0 +1,3 @@
+docker remove qdyp
+docker build -t qdyp:v1 .
+docker run -itd --name qdyp --net proxypool_default qdyp:v1

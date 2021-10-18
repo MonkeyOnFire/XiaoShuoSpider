@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'qdyp.spiders'
 RETRY_TIMES = 100
 
 # 数据库地址
-MYSQL_HOST = 'mysql'
+MYSQL_HOST = '127.0.0.1'
 # 数据库用户名:
 MYSQL_USER = 'root'
 # 数据库密码
@@ -30,7 +30,7 @@ MYSQL_DBNAME = 'xiaoshuo'
 MYSQL_CHARSET = 'utf8mb4'
 
 # 指定Redis的主机名和端口
-REDIS_HOST = 'redis'
+REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

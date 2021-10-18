@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'qdyp.spiders'
 RETRY_TIMES = 100
 
 # 数据库地址
-MYSQL_HOST = 'localhost'
+MYSQL_HOST = 'mysql'
 # 数据库用户名:
 MYSQL_USER = 'root'
 # 数据库密码

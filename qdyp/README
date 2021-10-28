@@ -1,3 +1,17 @@
+#安装mysql
+docker run -p 10087:3306 --name mysql \
+ -v /usr/local/docker/mysql/conf:/etc/mysql \
+ -v /usr/local/docker/mysql/logs:/var/log/mysql \
+ -v /usr/local/docker/mysql/data:/var/lib/mysql \
+ -v /etc/localtime:/etc/localtime:ro \
+ -e MYSQL_ROOT_PASSWORD=b04JugynOP0T \
+ --net proxypool_default \
+ --restart always \
+ -d mysql:5.7
+#创建表
+create database xiaoshuo;
+xiaoshuo.sql;
+#启动项目
 docker rm qdyp
 docker build -t qdyp:v1 .
 docker run -itd -v /etc/localtime:/etc/localtime:ro --name qdyp --net proxypool_default qdyp:v1

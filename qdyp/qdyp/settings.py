@@ -20,7 +20,7 @@ MYSQL_HOST = 'mysql'
 # 数据库用户名:
 MYSQL_USER = 'root'
 # 数据库密码
-MYSQL_PASSWORD = '123456'
+MYSQL_PASSWORD = 'b04JugynOP0T'
 # 数据库端口
 MYSQL_PORT = 3306
 # 数据库名称

@@ -15,3 +15,6 @@ xiaoshuo.sql;
 docker rm qdyp
 docker build -t qdyp:v1 .
 docker run -itd -v /etc/localtime:/etc/localtime:ro --name qdyp --net proxypool_default qdyp:v1
+#定时任务
+crontab -e
+0 2 * * 1 docker start qdyp

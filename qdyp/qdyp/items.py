@@ -18,3 +18,5 @@ class QdypItem(scrapy.Item):
     cnt = scrapy.Field()
     rankCnt = scrapy.Field()
     rankNum = scrapy.Field()
+    subCat = scrapy.Field()
+    subCatId = scrapy.Field()

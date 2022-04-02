@@ -37,7 +37,12 @@ class YsbookstoreSpider(scrapy.Spider):
                         tmp+="、"+tag
                     book_item[item] = tmp
                 if item == 'countWord' and not book_item[item]:
-                    
                     book_item[item] = 0
+            for aitem in book_item:
+                if isinstance (book_item[aitem],str):
+                    if not book_item or len(book_item[aitem]) == 0:
+                        book_item[aitem] = ''
+            if book_item['updateAt'][0] == '0':
+                book_item['updateAt']='2000-01-24T04:13:22.000Z'
             yield book_item
  
